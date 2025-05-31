@@ -1,0 +1,145 @@
+{
+  "name": "Pharmacie Gaïa - Rouen Quartier Flaubert",
+  "short_name": "Pharmacie Gaïa",
+  "description": "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture septembre 2025.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "lang": "fr-FR",
+  "dir": "ltr",
+  "categories": ["health", "pharmacy", "medical", "business"],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Pharmacie Gaïa - Version desktop"
+    },
+    {
+      "src": "/screenshots/mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Pharmacie Gaïa - Version mobile"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nos Services",
+      "short_name": "Services",
+      "description": "Découvrir nos services pharmaceutiques",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/shortcut-services.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Nous Contacter",
+      "short_name": "Contact",
+      "description": "Contacter la Pharmacie Gaïa",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/shortcut-contact.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Nous Trouver",
+      "short_name": "Localisation",
+      "description": "Localiser la pharmacie",
+      "url": "/#localisation",
+      "icons": [
+        {
+          "src": "/shortcut-location.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Horaires",
+      "short_name": "Horaires",
+      "description": "Consulter nos horaires d'ouverture",
+      "url": "/horaires",
+      "icons": [
+        {
+          "src": "/shortcut-hours.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://pharmacie-gaia.fr/manifest.json"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "capture_links": "existing-client-navigate"
+}

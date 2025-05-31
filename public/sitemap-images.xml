@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://pharmacie-gaia.fr/</loc>
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/pharmacy-exterior.jpg</image:loc>
+      <image:title>Pharmacie Gaïa - Façade extérieure</image:title>
+      <image:caption>Façade moderne de la Pharmacie Gaïa dans l'éco-quartier Flaubert à Rouen</image:caption>
+      <image:geo_location>Rouen, Normandie, France</image:geo_location>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/pharmacy-interior.jpg</image:loc>
+      <image:title>Pharmacie Gaïa - Intérieur moderne</image:title>
+      <image:caption>Intérieur spacieux et moderne de la Pharmacie Gaïa avec espaces de conseil</image:caption>
+      <image:geo_location>Rouen, Normandie, France</image:geo_location>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/pharmacy-team.jpg</image:loc>
+      <image:title>Équipe Pharmacie Gaïa</image:title>
+      <image:caption>Équipe professionnelle de la Pharmacie Gaïa : pharmaciens et préparateurs</image:caption>
+      <image:geo_location>Rouen, Normandie, France</image:geo_location>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/pharmacy-products.jpg</image:loc>
+      <image:title>Produits Pharmacie Gaïa</image:title>
+      <image:caption>Large gamme de médicaments et produits de parapharmacie</image:caption>
+      <image:geo_location>Rouen, Normandie, France</image:geo_location>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/quartier-flaubert.jpg</image:loc>
+      <image:title>Éco-quartier Flaubert</image:title>
+      <image:caption>Vue de l'éco-quartier Flaubert où se situe la Pharmacie Gaïa</image:caption>
+      <image:geo_location>Rouen, Normandie, France</image:geo_location>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+    
+    <image:image>
+      <image:loc>https://pharmacie-gaia.fr/images/logo-pharmacy.png</image:loc>
+      <image:title>Logo Pharmacie Gaïa</image:title>
+      <image:caption>Logo officiel de la Pharmacie Gaïa</image:caption>
+      <image:license>https://pharmacie-gaia.fr/license</image:license>
+    </image:image>
+  </url>
+
+</urlset>
