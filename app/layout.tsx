@@ -13,9 +13,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture 1er Septembre 2025",
+  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture prévue Septembre 2025",
   description:
-    "Pharmacie Gaïa : votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture 1er septembre 2025. Rive gauche, proche TEOR.",
+    "Pharmacie Gaïa : votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue septembre 2025. Rive gauche, proche TEOR.",
   keywords: [
     "pharmacie Rouen",
     "pharmacie Flaubert",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://pharmagaia.fr"),
+  metadataBase: new URL("https://pharmagaia.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -54,25 +54,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture Septembre 2025",
     description:
-      "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture 1er septembre 2025.",
+      "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue septembre 2025.",
     url: "https://pharmagaia.com",
     siteName: "Pharmacie Gaïa",
-    images: [
-      {
-        url: "/og-image-pharmacy.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Pharmacie Gaïa - Quartier Flaubert, Rouen",
-        type: "image/jpeg",
-      },
-      {
-        url: "/og-image-pharmacy-square.jpg",
-        width: 1200,
-        height: 1200,
-        alt: "Pharmacie Gaïa - Votre pharmacie de quartier",
-        type: "image/jpeg",
-      },
-    ],
     locale: "fr_FR",
     type: "website",
     countryName: "France",
@@ -82,9 +66,6 @@ export const metadata: Metadata = {
     title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture Septembre 2025",
     description:
       "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés.",
-    images: ["/og-image-pharmacy.jpg"],
-    creator: "@PharmacieGaia",
-    site: "@PharmacieGaia",
   },
   robots: {
     index: true,
@@ -98,6 +79,9 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  verification: {
+    google: "XUzeHaoejHArrS1FEVQ492sl45bEsL5yLFWQ6sX92g",
   },
   category: "health",
   classification: "Pharmacy",
@@ -116,11 +100,8 @@ export const metadata: Metadata = {
   generator: "Next.js",
   abstract:
     "Pharmacie Gaïa - Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Services pharmaceutiques complets, conseils personnalisés.",
-  archives: ["https://pharmacie-gaia.fr/archives"],
-  assets: ["https://pharmacie-gaia.fr/assets"],
-  bookmarks: ["https://pharmacie-gaia.fr/bookmarks"],
   other: {
-    "google-site-verification": "your-google-verification-code",
+    "google-site-verification": "XUzeHaoejHArrS1FEVQ492sl45bEsL5yLFWQ6sX92g",
     "msvalidate.01": "your-bing-verification-code",
     "yandex-verification": "your-yandex-verification-code",
     "facebook-domain-verification": "your-facebook-verification-code",
@@ -146,6 +127,33 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Pharmacy",
+      "@id": "https://pharmagaia.com",
+      name: "Pharmacie Gaia Santé Rouen",
+      description:
+        "Pharmacie située dans l’éco-quartier Flaubert à Rouen rive gauche. Médicaments, conseils pharmaceutiques et livraison à domicile.",
+      url: "https://pharmagaia.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "13 rue Berthe Morisot",
+        addressLocality: "Rouen",
+        postalCode: "76100",
+        addressCountry: "FR",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 49.4431,
+        longitude: 1.0993,
+      },
+      openingHours: ["Mo-Fr 08:30-19:30", "Sa 08:30-19:00"],
+    },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -155,10 +163,6 @@ export default function RootLayout({
     <html lang="fr-FR" dir="ltr">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="alternate" type="application/rss+xml" title="Pharmacie Gaïa - Actualités" href="/rss.xml" />
@@ -212,10 +216,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Pharmacie Gaïa",
-              url: "https://pharmacie-gaia.fr",
+              url: "https://pharmagaia.com",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://pharmacie-gaia.fr/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),

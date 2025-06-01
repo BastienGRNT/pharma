@@ -1,87 +1,11 @@
-# Robots.txt pour Pharmacie Gaïa
-# https://pharmacie-gaia.fr/robots.txt
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /tmp/
+Allow: /public/
 
 User-agent: *
-Allow: /
 Disallow: /admin/
-Disallow: /private/
-Disallow: /api/
-Disallow: /temp/
-Disallow: /*.json$
-Disallow: /*?*utm_source=
-Disallow: /*?*utm_medium=
-Disallow: /*?*utm_campaign=
-Disallow: /*?*utm_term=
-Disallow: /*?*utm_content=
-Disallow: /*?*gclid=
-Disallow: /*?*fbclid=
-Disallow: /*?*ref=
-Disallow: /search?
-Disallow: /404
-Disallow: /500
+Disallow: /tmp/
+Allow: /public/
 
-# Sitemap
-Sitemap: https://pharmacie-gaia.fr/sitemap.xml
-Sitemap: https://pharmacie-gaia.fr/sitemap-images.xml
-Sitemap: https://pharmacie-gaia.fr/sitemap-news.xml
-
-# Spécifique aux moteurs de recherche
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-Request-rate: 1/10s
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
-Request-rate: 1/15s
-
-User-agent: Slurp
-Allow: /
-Crawl-delay: 2
-
-User-agent: DuckDuckBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 5
-
-User-agent: YandexBot
-Allow: /
-Crawl-delay: 3
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# Bloquage des bots indésirables
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: MajesticSEO
-Disallow: /
-
-# Délai de crawl général
-Crawl-delay: 1
-
-# Host (optionnel)
-Host: https://pharmacie-gaia.fr
+Sitemap: https://gaiasanté.com/sitemap.xml

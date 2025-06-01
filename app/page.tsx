@@ -18,19 +18,13 @@ import { StructuredData } from "@/components/structured-data"
 import type { Metadata } from "next"
 import Image from 'next/image';
 import image1 from './assets/Image1.png';
-import image9  from './assets/Image9.jpg';
-import image3 from './assets/Image3.jpg';
-import image5 from './assets/Image5.jpg';
-import image6 from './assets/Image6.png';
-import image8 from './assets/Image8.jpg';
-import image10 from './assets/Image10.png';
-import image11 from './assets/Image11.png';
-import image12 from './assets/Image12.jpg';
+import Head from "next/head"
+
 
 export const metadata: Metadata = {
-  title: "Pharmacie Gaïa - Quartier Flaubert, Rouen | Ouverture 1er Septembre 2025",
+  title: "Pharmacie Gaïa - Quartier Flaubert, Rouen | Ouverture prévue Septembre 2025",
   description:
-    "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, conseils personnalisés, parapharmacie. Ouverture le 1er septembre 2025.",
+    "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, conseils personnalisés, parapharmacie. Ouverture prévue septembre 2025.",
 }
 
 const pharmacyData = {
@@ -47,6 +41,41 @@ const pharmacyData = {
 export default function PharmacieGaia() {
   return (
     <>
+
+    <Head>
+        <title>Pharmacie Gaïa – Pharmacie à Rouen, Éco-quartier Flaubert</title>
+        <meta
+          name="description"
+          content="Pharmacie Gaïa, votre pharmacie de quartier à Rouen, dans l'éco-quartier Flaubert."
+        />
+        <meta
+          name="keywords"
+          content="Pharmacie Rouen, Éco-quartier Flaubert, Santé Rouen, Pharmacie de quartier"
+        />
+        <link rel="canonical" href="https://gaia-sante-rouen.fr/" />
+        <meta name="robots" content="index, follow" />
+        <meta httpEquiv="Content-Language" content="fr" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Pharmacy",
+              "name": "Pharmacie Gaïa",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Adresse ici",
+                "addressLocality": "Rouen",
+                "postalCode": "76000",
+                "addressCountry": "FR"
+              },
+              "url": "https://pharmagaia.com"
+            }),
+          }}
+        />
+      </Head>
+
       <StructuredData type="pharmacy" />
       <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-teal-50">
         {/* Navigation */}
