@@ -182,17 +182,11 @@ export default function PharmacieGaia() {
                 </div>
               </div>
               <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                {/* Image principale du cabinet - Vue extérieure */}
                 <div className="relative h-80 w-full">
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                    <div className="text-center p-4">
-                      <Leaf className="h-12 w-12 text-gray-400 mx-auto mb-2" aria-hidden="true" />
-                      <p className="text-gray-500 font-medium">Image de la pharmacie</p>
-                      <p className="text-sm text-gray-400 mt-2">Remplacez par votre image</p>
-                    </div>
+                    <Image src={image1} alt="Image vue éxtèrieur" className="mt-2" />
                   </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-sm text-gray-500 italic">Pharmacie Gaïa - Quartier Flaubert</p>
                 </div>
               </div>
             </div>

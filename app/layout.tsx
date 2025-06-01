@@ -1,12 +1,19 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type {Metadata, Viewport} from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
+export const viewport: Viewport = {
+      width: "device-width",
+      initialScale: 1,
+      maximumScale: 5,
+      userScalable: true,
+}
+
 export const metadata: Metadata = {
-  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture Septembre 2025",
+  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture 1er Septembre 2025",
   description:
     "Pharmacie Gaïa : votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture 1er septembre 2025. Rive gauche, proche TEOR.",
   keywords: [
@@ -92,14 +99,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-    other: {
-      bing: ["your-bing-verification-code"],
-    },
-  },
   category: "health",
   classification: "Pharmacy",
   referrer: "origin-when-cross-origin",
@@ -108,12 +107,6 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "#16a34a" },
     { media: "(prefers-color-scheme: dark)", color: "#16a34a" },
   ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   appleWebApp: {
     capable: true,
     title: "Pharmacie Gaïa",
