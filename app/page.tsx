@@ -22,14 +22,14 @@ import Head from "next/head"
 
 
 export const metadata: Metadata = {
-  title: "Pharmacie Gaïa - Quartier Flaubert, Rouen | Ouverture prévue Septembre 2025",
+  title: "Pharmacie Gaïa - Quartier Flaubert, Rouen | Ouverture prévue 4ème trimestre 2025",
   description:
     "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, conseils personnalisés, parapharmacie. Ouverture prévue septembre 2025.",
 }
 
 const pharmacyData = {
   name: "Pharmacie Gaïa",
-  openingDate: "1er septembre 2025",
+  openingDate: "4ème trimestre 2025",
   phone: "06 60 62 03 09",
   email: "cg@pharmagaia.com",
   hours: "Du lundi au vendredi : 8h30-19h30 | Samedi : 9h-19h",
