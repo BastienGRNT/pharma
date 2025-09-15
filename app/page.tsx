@@ -178,7 +178,7 @@ export default function PharmacieGaia() {
         <section id="presentation" className="py-16 bg-white" role="main">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Bienvenue à votre nouvelle pharmacie</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Bienvenue dans votre nouvelle pharmacie</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 La Pharmacie Gaïa vous accueille dans un espace moderne et convivial pour tous vos besoins de santé.
               </p>
