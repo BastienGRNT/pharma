@@ -13,9 +13,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture prévue Septembre 2025",
+  title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture prévue le 2 février 2026",
   description:
-    "Pharmacie Gaïa : votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue septembre 2025. Rive gauche, proche TEOR.",
+    "Pharmacie Gaïa : votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue le 2 février 2026. Rive gauche, proche TEOR.",
   keywords: [
     "pharmacie Rouen",
     "pharmacie Flaubert",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture Septembre 2025",
+    title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture le 2 février 2026",
     description:
-      "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue septembre 2025.",
+      "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés. Ouverture prévue le 2 février 2026.",
     url: "https://pharmagaia.com",
     siteName: "Pharmacie Gaïa",
     locale: "fr_FR",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture Septembre 2025",
+    title: "Pharmacie Gaïa Rouen - Quartier Flaubert | Ouverture le 2 février 2026",
     description:
       "Votre nouvelle pharmacie dans l'éco-quartier Flaubert à Rouen. Médicaments, parapharmacie, conseils personnalisés.",
   },
