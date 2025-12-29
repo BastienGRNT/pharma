@@ -170,6 +170,26 @@ export default function PharmacieGaia() {
                   </a>
                 </Button>
               </div>
+              <div className="max-w-3xl mx-auto bg-white/50 backdrop-blur-sm border border-green-100 p-8 rounded-2xl shadow-sm">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className="bg-green-100 p-3 rounded-full">
+                    <ShoppingBag className="h-6 w-6 text-green-600" />
+                  </div>
+                  <p className="text-lg text-gray-700 font-medium">
+                    Retrouvez dès maintenant tous nos produits <span className="text-green-600 font-bold">(hors médicaments)</span> en Click & Collect ou en livraison chez vous.
+                  </p>
+                  <Button
+                    size="lg"
+                    variant="default"
+                    className="bg-green-600 hover:bg-teal-700 text-white rounded-full px-10 shadow-md"
+                    asChild
+                  >
+                    <a href="https://www.pharmazon.fr/pharmacie-henri-iv" target="_blank" rel="noopener noreferrer">
+                      Commander en ligne
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
